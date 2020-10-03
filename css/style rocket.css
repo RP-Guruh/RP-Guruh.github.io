@@ -1,0 +1,138 @@
+
+.wrap {
+  margin-left: -400px;
+  margin-top: -100px;
+ 
+  width: 900px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+
+}
+.wrap .men {
+  margin-left: 200px;
+  margin-top: 90px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.wrap .men .menfire {
+  position: absolute;
+  width: 50px;
+  top: 100px;
+  left: -10px;
+  -webkit-animation: fire .2s infinite linear;
+          animation: fire .2s infinite linear;
+            animation-play-state: paused; 
+
+}
+.wrap .men .menfire img {
+  width: 100%;
+}
+.wrap .women {
+  margin-left: 350px;
+  right: 0;
+  bottom: 0;
+  margin-top: 10px;
+}
+.wrap .women .womenfire {
+  
+  margin-top: -110px;
+  width: 50px;
+  top: 70px;
+  margin-left: 192px;
+  -webkit-animation: fire .2s infinite linear;
+          animation: fire .2s infinite linear;
+            animation-play-state: paused; 
+
+}
+.wrap .women .womenfire img {
+  width: 100%;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.cloud {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1000px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: inline-block;
+  -webkit-animation: ani 1.5s infinite linear;
+          animation: ani 1.5s infinite linear;
+  animation-play-state: paused; 
+}
+.cloud img {
+  display: inline-block;
+  width: 500px;
+}
+
+.start {
+  position: absolute;
+  width: 1000px;
+  -webkit-animation: ani 8s infinite linear;
+          animation: ani 8s infinite linear;
+            animation-play-state: paused; 
+
+}
+.start img {
+  display: inline-block;
+  width: 500px;
+}
+
+@-webkit-keyframes ani {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes ani {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@-webkit-keyframes fire {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+    opacity: 1;
+  }
+}
+@keyframes fire {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+    opacity: 1;
+  }
+}
